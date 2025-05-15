@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <resolution width="1080" height="2400" />
+
+    <!-- Touch calibration (optional) -->
+    <touchscreen calibration="calibrated" />
+
+    <!-- Hardware button config (optional override) -->
+    <hardware>
+        <key name="home" />
+        <key name="back" />
+        <key name="power" />
+    </hardware>
+
+    <!-- Default language -->
+    <language default="en" />
+
+    <!-- Theme selector -->
+    <theme name="portrait_hdpi" />
+</resources>

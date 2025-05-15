@@ -1,0 +1,2 @@
+/dev/block/platform/*/by-name/*   0660   root   system
+/dev/input/*                      0660   root   input

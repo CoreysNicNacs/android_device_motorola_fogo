@@ -1,9 +1,9 @@
-//
-// Copyright (C) 2025 The Android Open Source Project
-// Copyright (C) 2025 SebaUbuntu's TWRP device tree generator
-//
-// SPDX-License-Identifier: Apache-2.0
-//
-
-soong_namespace {
+soong_config_module_type {
+    name: "twrp_global_config",
+    module_type: "twrp_defaults",
+    config_namespace: "twrp",
+    variables: ["TW_THEME", "TARGET_SCREEN_WIDTH", "TARGET_SCREEN_HEIGHT"],
+    bool_variables: [],
+    value_variables: ["TW_THEME", "TARGET_SCREEN_WIDTH", "TARGET_SCREEN_HEIGHT"],
+    properties: ["cflags"],
 }

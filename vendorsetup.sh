@@ -1,10 +1,5 @@
-#
-# Copyright (C) 2025 The Android Open Source Project
-# Copyright (C) 2025 SebaUbuntu's TWRP device tree generator
-#
-# SPDX-License-Identifier: Apache-2.0
-#
+#!/bin/bash
+# vendorsetup.sh for Motorola fogo
 
-add_lunch_combo omni_fogo-user
-add_lunch_combo omni_fogo-userdebug
-add_lunch_combo omni_fogo-eng
+COMMON_LUNCH_CHOICES="${COMMON_LUNCH_CHOICES:-} twrp_fogo"
+export COMMON_LUNCH_CHOICES

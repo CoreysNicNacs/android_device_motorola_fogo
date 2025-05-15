@@ -1,0 +1,21 @@
+on early-init
+    # Set log level
+    write /sys/module/printk/parameters/console_loglevel 7
+
+on init
+    # Recovery-specific props
+    setprop persist.sys.usb.config adb
+    setprop sys.usb.config adb
+    start adbd
+
+on post-fs
+    # Setup /dev/usb-ffs and mount points
+    mkdir /dev/usb-ffs 0770 shell shell
+    mkdir /dev/usb-ffs/adb 0770 shell shell
+    mount functionfs adb /dev/usb-ffs/adb uid=2000,gid=2000
+
+service adbd /sbin/adbd recovery
+    seclabel u:r:adbd:s0
+    class main
+    disabled
+    oneshot

@@ -1,0 +1,15 @@
+# General devices
+/dev/ttyUSB*        0660   system   system
+/dev/ttyHS*         0660   system   system
+/dev/diag           0660   system   system
+/dev/smd0           0660   system   system
+/dev/smdcntl*       0660   system   system
+/dev/smd_pkt*       0660   system   system
+
+# ION / graphics
+/dev/kgsl-3d0       0666   system   graphics
+/dev/ion            0666   system   graphics
+
+# For touchscreen (generic)
+# Update if your device has a different input node
+/dev/input/event*   0666   system   input
