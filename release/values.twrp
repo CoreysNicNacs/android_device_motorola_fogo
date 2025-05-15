@@ -1,0 +1,14 @@
+values = [
+    {
+        "name": "TW_THEME",
+        "value": "portrait_hdpi"
+    },
+    {
+        "name": "TARGET_SCREEN_WIDTH",
+        "value": 720
+    },
+    {
+        "name": "TARGET_SCREEN_HEIGHT",
+        "value": 1600
+    },
+]

@@ -1,0 +1,20 @@
+flags = [
+    {
+        "name": "TW_THEME",
+        "type": "string",
+        "namespace": "recovery_ui",
+        "value": "portrait_hdpi"
+    },
+    {
+        "name": "TARGET_SCREEN_WIDTH",
+        "type": "int",
+        "namespace": "recovery_ui",
+        "value": 720
+    },
+    {
+        "name": "TARGET_SCREEN_HEIGHT",
+        "type": "int",
+        "namespace": "recovery_ui",
+        "value": 1600
+    },
+]
